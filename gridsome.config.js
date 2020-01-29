@@ -4,7 +4,7 @@ module.exports = {
   plugins: [
     // Markdown-based Guides
     {
-      use: '~/vue-remark',
+      use: '@gridsome/vue-remark',
       options: {
         typeName: 'Guide',
         baseDir: './guides',
@@ -14,7 +14,7 @@ module.exports = {
     },
     // Markdown-based Reference pages
     {
-      use: '~/vue-remark',
+      use: '@gridsome/vue-remark',
       options: {
         typeName: 'Reference',
         baseDir: './references',

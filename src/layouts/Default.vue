@@ -44,7 +44,7 @@
 
     v-toolbar(fixed app)
       v-toolbar-side-icon(@click.stop="showDrawer = !showDrawer")
-      v-toolbar-title  {{ $static.metaData.siteName }}
+      v-toolbar-title  {{ $static.metadata.siteName }}
 
     v-content
       v-container(fluid)
@@ -56,7 +56,7 @@
 
 <static-query>
 query {
-  metaData {
+  metadata {
     siteName
   }
 }

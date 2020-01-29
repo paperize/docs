@@ -10,24 +10,26 @@
     "bump-prod": "npm run build && npm run deploy"
   },
   "dependencies": {
-    "gridsome": "^0.6.7",
-    "vue": "^2.6.10",
-    "vuetify": "^1.5.17"
+    "@gridsome/source-filesystem": "~0.6",
+    "@gridsome/vue-remark": "^0.1.9",
+    "gridsome": "^0.7",
+    "vue": "~2.6.11",
+    "vuetify": "^1.5.22"
   },
   "devDependencies": {
-    "@gridsome/source-filesystem": "^0.5.0",
-    "@gridsome/transformer-remark": "^0.3.2",
-    "aws-sdk": "^2.511.0",
-    "bluebird": "^3.5.5",
-    "coffeescript": "^2.4.1",
+    "aws-sdk": "^2.610.0",
+    "bluebird": "^3.7.2",
+    "coffeescript": "^2.5.0",
     "eslint": "^4.18.1",
     "eslint-plugin-vue": "^4.3.0",
+    "fsevents": "~2.1",
     "http-server": "^0.11.1",
     "lodash": "^4.17.15",
-    "mime-types": "^2.1.24",
+    "mime-types": "^2.1.26",
     "pug": "^2.0.4",
     "pug-plain-loader": "^1.0.0",
     "recursive-readdir": "^2.2.2",
+    "sharp": "~0.24",
     "webpack-node-externals": "^1.7.2"
   }
 }
