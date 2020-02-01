@@ -19,6 +19,10 @@ So, for a Text Layer named "Card Title", in order to set the font size for diffe
 
 ...and then fill in the cells with numbers representing the font size you want for that particular component.
 
+## Any Layer Attributes
+
+- `visible`: must be `true` or `false`, case-insensitive, hides the entire layer
+
 ## Shape Layer Attributes
 
 - `shape`: must be `rectangle`, `roundedRectangle`, or `ellipse`
