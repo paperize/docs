@@ -9,7 +9,7 @@ module.exports = {
         typeName: 'Guide',
         baseDir: './guides',
         route: '/guides/:slug',
-        component: "src/templates/Guide.vue"
+        template: "src/templates/Guide.vue"
       }
     },
     // Markdown-based Reference pages
@@ -19,7 +19,7 @@ module.exports = {
         typeName: 'Reference',
         baseDir: './references',
         route: '/references/:slug',
-        component: "src/templates/Reference.vue"
+        template: "src/templates/Reference.vue"
       }
     }
   ],
