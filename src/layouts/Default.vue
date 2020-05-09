@@ -11,7 +11,7 @@
             v-icon(medium) home
           v-list-tile-title Home
 
-        v-list-tile(ripple to="/references/roadmap" @click="")
+        v-list-tile(ripple to="/references/roadmap/" @click="")
           v-list-tile-action
 
           v-list-tile-title Paperize Roadmap
@@ -32,7 +32,7 @@
         v-subheader(inset) References
         v-divider
 
-        v-list-tile(ripple v-for="reference in references" :to="reference.to" :key="reference.name" @click="")
+        v-list-tile(ripple v-for="reference in references" :to="reference.to" :key="reference.name" @click="" tag="g-link")
           v-list-tile-action
           v-list-tile-title {{ reference.name }}
           v-tooltip(v-if="reference.isNew" top)
@@ -48,7 +48,7 @@
         slot/
 
     v-footer(app)
-      span(class="white--text") &copy; 2019
+      span(class="white--text") &copy; 2020
 </template>
 
 <static-query>
@@ -62,22 +62,22 @@ query {
 <script>
   const
     guides = [
-      { name: "Getting Started", to: "/guides/getting-started" },
-      { name: "Template Editor", to: "/guides/template-editor" },
-      { name: "Google Drive Integration", to: "/guides/google-drive" },
+      { name: "Getting Started", to: "/guides/getting-started/" },
+      { name: "Template Editor", to: "/guides/template-editor/" },
+      { name: "Google Drive Integration", to: "/guides/google-drive/" },
     ],
 
     references = [
-      { name: "Component", to: "/references/component" },
-      { name: "Game", to: "/references/game" },
-      { name: "Google Authorization", to: "/references/google-authorization" },
-      { name: "Google Fonts", to: "/references/google-fonts" },
-      { name: "Image", to: "/references/image" },
-      { name: "Image Layer", to: "/references/image-layer" },
-      { name: "Magic Properties", to: "/references/magic-properties" },
-      { name: "Shape Layer", to: "/references/shape-layer" },
-      { name: "Spreadsheet", to: "/references/spreadsheet" },
-      { name: "Text Layer", to: "/references/text-layer" },
+      { name: "Component", to: "/references/component/" },
+      { name: "Game", to: "/references/game/" },
+      { name: "Google Authorization", to: "/references/google-authorization/" },
+      { name: "Google Fonts", to: "/references/google-fonts/" },
+      { name: "Image", to: "/references/image/" },
+      { name: "Image Layer", to: "/references/image-layer/" },
+      { name: "Magic Properties", to: "/references/magic-properties/" },
+      { name: "Shape Layer", to: "/references/shape-layer/" },
+      { name: "Spreadsheet", to: "/references/spreadsheet/" },
+      { name: "Text Layer", to: "/references/text-layer/" },
     ]
 
   export default {
