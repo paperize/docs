@@ -15,9 +15,6 @@
           v-list-tile-action
 
           v-list-tile-title Paperize Roadmap
-          v-tooltip(top)
-            span New content as of June 2019!
-            v-icon(slot="activator" color="blue") new_releases
 
         //- Guides
         v-subheader(inset) Guides
@@ -65,7 +62,7 @@ query {
 <script>
   const
     guides = [
-      { name: "Getting Started", to: "/guides/getting-started", isNew: "April 2019" },
+      { name: "Getting Started", to: "/guides/getting-started" },
       { name: "Template Editor", to: "/guides/template-editor" },
       { name: "Google Drive Integration", to: "/guides/google-drive" },
     ],
@@ -74,10 +71,10 @@ query {
       { name: "Component", to: "/references/component" },
       { name: "Game", to: "/references/game" },
       { name: "Google Authorization", to: "/references/google-authorization" },
-      { name: "Google Fonts", to: "/references/google-fonts", isNew: "July 2019" },
+      { name: "Google Fonts", to: "/references/google-fonts" },
       { name: "Image", to: "/references/image" },
       { name: "Image Layer", to: "/references/image-layer" },
-      { name: "Magic Properties", to: "/references/magic-properties", isNew: "July 2019" },
+      { name: "Magic Properties", to: "/references/magic-properties" },
       { name: "Shape Layer", to: "/references/shape-layer" },
       { name: "Spreadsheet", to: "/references/spreadsheet" },
       { name: "Text Layer", to: "/references/text-layer" },
