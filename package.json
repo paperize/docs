@@ -2,11 +2,11 @@
   "name": "docs",
   "private": true,
   "scripts": {
-    "start": "gridsome develop",
-    "build": "gridsome build",
-    "develop": "gridsome develop",
-    "explore": "gridsome explore",
-    "deploy": "coffee deploy.coffee",
+    "start": "npx gridsome develop",
+    "build": "npx gridsome build",
+    "develop": "npx gridsome develop",
+    "explore": "npx gridsome explore",
+    "deploy": "npx coffee deploy.coffee",
     "bump-prod": "npm run build && npm run deploy"
   },
   "dependencies": {
