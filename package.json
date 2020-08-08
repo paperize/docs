@@ -22,7 +22,6 @@
     "coffeescript": "^2.5.0",
     "eslint": "^4.18.1",
     "eslint-plugin-vue": "^4.3.0",
-    "fsevents": "~2.1",
     "http-server": "^0.11.1",
     "lodash": "^4.17.15",
     "mime-types": "^2.1.26",
