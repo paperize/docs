@@ -33,7 +33,7 @@ The layer config panel, in the middle of the template editor, shows settings for
 
 * **Font** allows selecting font, style (such as bold or italic), text size and also text color. Formatting is _not_ collected from the spreadsheet, so any formatting in the spreadsheet will be lost. Note that text size will be decreased if necessary to fit the text within the given dimensions.
 * **Text alignment** allows setting setting left/center/right in horizontal alignment, and top/middle/bottom in vertical alignment.
-* **Text content** tells what the actual text should be. You can enter static text, but you probably also want some text fetched from the spreadsheet. You insert column values by entering column header in tripple curly-braces, for example {{{Name}}}. By default any column matching the layer name will be used.
+* **Text content** tells what the actual text should be. You can enter static text, but you probably also want some text fetched from the spreadsheet. You insert column values by entering column header in tripple curly-braces, for example `{{{Name}}}`. By default any column matching the layer name will be used.
 
 ### Config for image layers
 
