@@ -35,6 +35,8 @@ The layer config panel, in the middle of the template editor, shows settings for
 * **Text alignment** allows setting setting left/center/right in horizontal alignment, and top/middle/bottom in vertical alignment.
 * **Text content** tells what the actual text should be. You can enter static text, but you probably also want some text fetched from the spreadsheet. You insert column values by entering column header in tripple curly-braces, for example `{{{Name}}}`. By default any column matching the layer name will be used.
 
+Note: The fonts starting with lowercase letters, at the top of the list, are from a collection that may lack some characters (such as [en dashes](https://en.wikipedia.org/wiki/Dash#En_dash)). If the preview is lacking special characters, switch to a font starting with an uppercase letter.
+
 ### Config for image layers
 
 * **Image selection**: This section holds a few important settings.
