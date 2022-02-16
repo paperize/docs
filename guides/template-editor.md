@@ -50,7 +50,9 @@ The layer config panel, in the middle of the template editor, shows settings for
 
 ### Magic properties
 
-A number of properties have a spreadsheet icon next to them. This tells that **magic properties** can be used to set the values, instead of entering them manually. This is done by setting a column name to the name of the magic property, visible when inspecting the spreadsheet icon. Most magic properties only allow specific values – see documentation for magic properties for more information.
+A number of properties have a spreadsheet icon next to them. This tells that **magic properties** can be used to set the values from spreadsheet data, instead of entering them manually in the editor. This is done by setting a column name to the name of the magic property, visible when inspecting the spreadsheet icon. Magic properties support certain values, depending on where they are used.
+
+Check out the [Magic Properties documentation](/references/magic-properties) to learn more about them.
 
 ## Preview
 
