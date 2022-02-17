@@ -7,11 +7,11 @@
           em Experimental bespoke rapid prototyping software for tabletop game designers
 
         v-alert(type="warning" value="true" outline)
-          strong Paperize alpha software, meaning it:
+          strong Paperize is alpha software, meaning it:
           ul
             li is missing major features
             li has unacceptable bugs
-            li can be confusing and is not yet documented
+            li can be confusing and is not well-documented
 
         p Want to support the project?
 
