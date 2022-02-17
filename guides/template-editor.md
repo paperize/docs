@@ -11,6 +11,7 @@ The template editor is opened from the home screen by pressing the edit button b
 * Layer config: This is where you enter settings for a layer you have selected.
 * Preview: This shows a preview of cards/components.
 
+
 ## Layers
 
 By pressing the `add` button in the layers section, you can add a new layer. There are three types of layers – text, image and shape. When adding a new layer, a box appears where you select which type of layer should be added. Some things to note:
@@ -20,14 +21,17 @@ By pressing the `add` button in the layers section, you can add a new layer. The
 * **Layer visibility** can be turned on and off by the button for this, shown on the selected layer. Above the layer list is a checkbox allowing highlighting the selected layer, which may be useful if you have layers that may easily be mixed up.
 * **Deleting layers** is done with the button for this, shown when you have selected a layer. You will have to confirm to actually delete the layer. There is no undelete.
 
+
 ## Layer config
 
 The layer config panel, in the middle of the template editor, shows settings for the selected layer. Which settings are available depends on the type of layer selected, but some settings are present for all layer types.
+
 
 ### Common settings for layers
 
 * **Layer name** is the name as presented on screen. Short and descriptive is generally a good idea.
 * **Dimensions** tells where the content of the layer should be placed. There is offset from top left corner (X and Y properties) as well as width and height (W and H properties). The dimensions can be set either in percent of the component size, in millimeters, or in pixels. Switching from `XYWH` to `INSET` coordinate mode instead allows setting the dimensions as distance from the four sides of the component, which is useful in some cases.
+
 
 ### Config for text layers
 
@@ -35,7 +39,29 @@ The layer config panel, in the middle of the template editor, shows settings for
 * **Text alignment** allows setting setting left/center/right in horizontal alignment, and top/middle/bottom in vertical alignment.
 * **Text content** tells what the actual text should be. You can enter static text, but you probably also want some text fetched from the spreadsheet. You insert column values by entering column header in tripple curly-braces, for example `{{{Name}}}`. By default any column matching the layer name will be used.
 
-Note: The fonts starting with lowercase letters, at the top of the list, are from a collection that may lack some characters (such as [en dashes](https://en.wikipedia.org/wiki/Dash#En_dash)). If the preview is lacking special characters, switch to a font starting with an uppercase letter.
+
+#### PDF fonts
+
+The first fonts in the list that are uncapitalized (`helvetica` etc) are [the built-in PDF fonts](https://docs.oracle.com/cd/E96927_01/TSG/FAQ/What%20are%20the%2014%20base%20fonts%20distributed%20with%20Acroba.html), and there are 2 things to note about them:
+
+* they don't need to be embedded into the file, so if you are targeting a small file size for your prints, you may which to use these
+* they aren't modern unicode fonts, so they lack what are considered "special characters" to average English speakers/writers, but are commonplace in other languages and at higher levels of reading
+  * the [en dash](https://en.wikipedia.org/wiki/Dash#En_dash) is not supported
+  * [Cyrillic characters](https://en.wikipedia.org/wiki/Cyrillic_script) are largely missing
+
+So, if you're having issues with some of your characters not appearing correctly, try a Google Font instead!
+
+
+#### Google Fonts
+
+The remaining, capitalized fonts (`ABeeZee` etc) are in fact provided by [Google Fonts](/references/google-fonts). These fonts:
+
+* are downloaded and embedded into the PDF, resulting in a larger file size (slightly larger, usually a single high quality image will be larger than a font)
+* typically contain the full unicode character set, helpful for games that
+* have a wide range of stylistic options (900+ fonts available and counting)
+
+Try out different Google Fonts to achieve a unique style, or to render the full range of unicode characters.
+
 
 ### Config for image layers
 
@@ -44,17 +70,20 @@ Note: The fonts starting with lowercase letters, at the top of the list, are fro
   * The **static** and **dynamic** selection style tells whether a given image should be used for all components (static) or the image should vary depending on content in the spreadsheet (dynamic). If using the dynamic setting, you get extra options for describing the image name. Only the middle of these settings allow fetching data from a spreadsheet column – the _prefix_ and _suffix_ boxes just hold static text.
 * **Image alignment** tells whether the image should be scaled to fit inside the given dimensions (fit), scaled to fill the given dimensions completely (fill) or stretched to match the dimensions even if it changes image proportions (stretch). There are also options for telling if left/center/right part of the image should show in case the full width isn't visible, and similarly for top/middle/bottom.
 
+
 ### Config for shape layers
 
 * **Shape** tells which shape should be drawn. There available types are rectangle, rounded rectangle and ellipse. There are no settings for the radius for the rounded rectangle.
 * **Stroke** contains settings for the border of the shape: width and color. The border can also be turned off.
 * **Fill** contains settings for any color to fill the shape with. It is unfilled by default.
 
+
 ### Magic properties
 
 A number of properties have a spreadsheet icon next to them. This tells that **magic properties** can be used to set the values from spreadsheet data, instead of entering them manually in the editor. This is done by setting a column name to the name of the magic property, visible when inspecting the spreadsheet icon. Magic properties support certain values, depending on where they are used.
 
 Check out the [Magic Properties documentation](/references/magic-properties) to learn more about them.
+
 
 ## Preview
 
