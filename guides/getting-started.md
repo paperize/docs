@@ -243,3 +243,17 @@ Now let's turn all this into a PDF we can download, distribute, and print!
 Pleased with what we've created, we close the Template Editor and look for the "Print" button:
 
 PRINT_BUTTONS
+
+### Print Settings
+
+The _print settings_ button opens a dialogue with some useful options.
+
+* **Print Which Components?** Standard is to print all components, but this can be changed to only one or several selected components.
+* **Layout Mode**. The _auto layout_ option prints the components to a pdf matching given paper type. There are a number of extra options if auto layout is selected (described below). The _Tabletop Simulator_ option provides a pdf with format suitable for creating decks in [Tabletop Simulator](https://store.steampowered.com/app/286160/Tabletop_Simulator/). The _component per page_ option prints one component on each page with no margins.
+
+Most options in the _auto layout_ settings are self-explaning, but some clarifications can be found below.
+
+* **Enable spacing?** If checked, there will be approximately 2 mm space between all printed components. (The spacing cannot be adjusted.)
+* **Merge components?** If checked, there will not automatically be a page break for new component types. Instead, if the new component has the same dimensions as the last, it will continue on the same page.
+
+Note that the components will be top-left aligned on the generated pages.
