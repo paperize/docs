@@ -5,7 +5,7 @@ title: Magic Properties Reference
 
 # Magic Properties
 
-Paperize has a powerful Template Editor built-in that allows you to make all items of one component look the same, but it can do even more. With Magic Properties, a spreadsheet can set dynamic parts of a template, so individual items can have different background colors, shapes, font sizes, etc.
+Paperize has a powerful [Template Editor](/guides/template-editor) built-in that allows you to make all items of one component look the same, but it can do even more. With Magic Properties, a spreadsheet can set dynamic parts of a template, so individual items can have different background colors, shapes, font sizes, etc.
 
 ## How to Set a Magic Property
 
