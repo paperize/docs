@@ -27,7 +27,7 @@
     "lodash": "^4.17.21",
     "mime-types": "^2.1.26",
     "pug": "^3.0.1",
-    "pug-plain-loader": "^1.0.0",
+    "pug-plain-loader": "^1.1.0",
     "recursive-readdir": "^2.2.2",
     "sharp": "~0.30.5",
     "webpack-node-externals": "^1.7.2"
