@@ -34,6 +34,8 @@ After entering our credentials, we need to give Paperize access to our Google Dr
 
 <DocImage class="tall" src="/images/google-permissions.png" caption="The Google Permissions Screen" />
 
+Notice that Paperize can ONLY see and modify files that it actually creates, it cannot see, modify, or delete any of your other Google Drive files, and thus is very secure.
+
 And that's it! Paperize will complete the login process, including creating a "Paperize.io" folder in our Google Drive, and dropping a special file in it, "paperize_database.json". You can view these details by clicking the "Database" menu item now visible at the top of the screen.
 
 <DocImage src="/generated-images/database-link.png" caption="The 'Database' Link" />
