@@ -58,7 +58,7 @@ jobs:
                   });
                   const state = statusResponse['data']['state'];
                   console.log('Validating status: ' + state);
-                  if(state != 'success') {
+                  if(state == 'failing') {
                     console.log('Discarding ' + branch + ' with status ' + state);
                     statusOK = false;
                   }
