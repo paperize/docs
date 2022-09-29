@@ -11,25 +11,25 @@
   },
   "dependencies": {
     "@gridsome/source-filesystem": "~0.6",
-    "@gridsome/vue-remark": "~0.2.0",
+    "@gridsome/vue-remark": "~0.2.6",
     "gridsome": "^0.7.19",
     "vue": "~2.6.11",
     "vuetify": "^1.5.24"
   },
   "devDependencies": {
-    "aws-sdk": "^2.610.0",
+    "aws-sdk": "^2.814.0",
     "bluebird": "^3.7.2",
     "coffeescript": "^2.5.0",
     "core-js": "3.8.1",
     "eslint": "^4.18.1",
     "eslint-plugin-vue": "^4.3.0",
     "http-server": "^0.12.3",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "mime-types": "^2.1.26",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "pug-plain-loader": "^1.0.0",
     "recursive-readdir": "^2.2.2",
-    "sharp": "~0.25.2",
+    "sharp": "~0.30.5",
     "webpack-node-externals": "^1.7.2"
   }
 }
